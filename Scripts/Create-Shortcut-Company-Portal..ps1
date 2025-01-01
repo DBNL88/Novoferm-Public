@@ -2,7 +2,7 @@
 $shortcutName = "Company Portal"
 
 # Specify the URL for the icon
-$iconUrl = "https://deviceadvice.io/wp-content/uploads/2020/08/CompanyPortalApp.ico"
+$iconUrl = "https://raw.githubusercontent.com/DBNL88/Novoferm-Public/refs/heads/main/Scripts/CompanyPortalApp.ico"
 
 # Specify the local path to save the icon
 $localIconPath = "$env:TEMP\CompanyPortalApp.ico"
