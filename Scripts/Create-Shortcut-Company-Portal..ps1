@@ -41,8 +41,13 @@ try {
     # Maak de shortcut
     $shortcut = $wshShell.CreateShortcut($shortcutPath)
 
-    # Stel het doelpad en icoonlocatie in
-    $shortcut.TargetPath = "shell:AppsFolder\Microsoft.CompanyPortal_8wekyb3d8bbwe!App"
+    # Gebruik explorer.exe als launcher
+    $shortcut.TargetPath = "C:\Windows\explorer.exe"
+
+    # Geef de shell-link als argument mee
+    $shortcut.Arguments = "shell:AppsFolder\Microsoft.CompanyPortal_8wekyb3d8bbwe!App"
+
+    # Stel het icoon in
     $shortcut.IconLocation = "$localIconPath,0"
 
     # Sla de shortcut op
